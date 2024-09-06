@@ -1,0 +1,15 @@
+spring:
+  port: 8080
+  datasource:
+    url: jdbc:postgresql://localhost:5432/talk
+    username: postgres
+    password: aegisep1234@
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        # show_sql: true
+        format_sql: true              # sql ??? ??
+        default_batch_fetch_size: 500 # ??? ??? ?? ? ?? ???
